@@ -1,0 +1,22 @@
+Feature Name,Information Gain
+milk,0.97
+toothed,0.87
+eggs,0.83
+hair,0.79
+feathers,0.72
+backbone,0.68
+breathes,0.61
+legs\_2,0.57
+legs\_4,0.54
+tail,0.5
+legs\_0,0.48
+airborne,0.47
+fins,0.47
+legs\_6,0.39
+aquatic,0.39
+catsize,0.31
+venomous,0.13
+predator,0.09
+legs\_8,0.07
+domestic,0.05
+legs\_5,0.03
