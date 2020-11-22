@@ -177,10 +177,12 @@ class assignment1:
         #     ax.tick_params(left=True, bottom=True, labelleft=True, labelbottom=True)
 
         nx.draw_networkx(G, pos=pos, node_color=color_map_, edge_color="grey", node_size=[v * 20 for v in d.values()], ax=ax, with_labels=False)
-        ax.tick_params(left=True, bottom=True, labelleft=True, labelbottom=True)
+        if args['show_axis']:
+            ax.tick_params(left=True, bottom=True, labelleft=True, labelbottom=True)
 
         # for node, (x, y) in pos.items():
-        texts =  [ ax.text(x, y, node, fontsize=7, ha='center', va='center') for node, (x, y) in pos.items()]
+        if args['labels']:
+            texts =  [ ax.text(x, y, node, fontsize=7, ha='center', va='center') for node, (x, y) in pos.items()]
         if args['adjust_text']:
             adjust_text(texts)
         plt.draw()  # pyplot draw()
